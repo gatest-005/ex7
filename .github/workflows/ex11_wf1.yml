@@ -1,3 +1,5 @@
+name: Container run Workflow
+on: [push]
 jobs:
   vm:
     runs-on: ubuntu-latest
