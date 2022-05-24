@@ -9,8 +9,8 @@ on:
   # Dependency to forking workflow
   workflow_run:
     workflows: ["dispatch workflow"]
-    type:
-      - complete
+    types:
+      - completed
 jobs:
   call_workflow_job:
     runs-on: ubuntu-latest
