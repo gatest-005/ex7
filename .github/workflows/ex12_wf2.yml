@@ -12,7 +12,7 @@ on:
     type:
       - complete
 jobs:
-  say_hi:
+  call_workflow_job:
     runs-on: ubuntu-latest
     steps:
       - name: msg
