@@ -1,5 +1,4 @@
 name: Node.js CI
-
 on:
   workflow_dispatch:
     branches: [ main ]
@@ -24,8 +23,8 @@ jobs:
       - run: npm run build --if-present
       - run: npm test
       - name: Upload output file
-		    uses: actions/upload-artifact@v3
-		    with:
-		      name: mochawesome
-		      path: /home/runner/work/ex7/ex7/reports/awesome-reports/mochawesome.html
+        uses: actions/upload-artifact@v3
+        with:
+          name: mochawesome
+          path: /home/runner/work/ex7/ex7/reports/awesome-reports/mochawesome.html
           
